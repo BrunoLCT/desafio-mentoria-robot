@@ -35,6 +35,7 @@ Realizar login
     [Documentation]   Realiza o login no site Swag Labs
     Input Text        id:user-name     ${USER}
     Input Text        id:password      ${PASSWORD}
+    Sleep             ${AGUARDAR}
     Click Element     xpath://input[@class='submit-button btn_action']
     Wait Until Page Contains Element   id:inventory_container    ${AGUARDAR}
     Sleep             ${AGUARDAR}
